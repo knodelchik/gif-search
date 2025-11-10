@@ -43,7 +43,7 @@ function GifItem({ gif, onClick }: GifItemProps) {
 
       <button
         onClick={handleFavoriteClick}
-        className="absolute top-2 right-2 p-2 text-2xl text-white bg-black bg-opacity-50 rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:text-red-500"
+        className="absolute top-2 right-2 p-2 text-2xl text-white bg-black bg-opacity-50 rounded-full transition-opacity hover:text-red-500 opacity-100 md:opacity-0 md:group-hover:opacity-100"
       >
         {isFav ? <FaHeart className="text-red-500" /> : <FaRegHeart />}
       </button>

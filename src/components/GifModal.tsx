@@ -140,10 +140,10 @@ function GifModal({ gif, onClose }: GifModalProps) {
             <span>Дата: <span className="font-semibold">{creationDate}</span></span>
           </div>
 
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <motion.button
               onClick={handleFavoriteClick}
-              className={`flex items-center gap-2 px-4 py-2 text-white rounded-full transition-colors ${isFav ? 'bg-red-500 hover:bg-red-600' : 'bg-blue-600 hover:bg-blue-700'
+              className={`flex w-full sm:w-auto justify-center items-center gap-2 px-4 py-2 text-white rounded-full transition-colors ${isFav ? 'bg-red-500 hover:bg-red-600' : 'bg-blue-600 hover:bg-blue-700'
                 }`}
               whileTap={{ scale: 0.95 }}
             >
@@ -153,7 +153,7 @@ function GifModal({ gif, onClose }: GifModalProps) {
 
             <motion.button
               onClick={copyLink}
-              className="flex items-center gap-2 px-4 py-2 text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+              className="flex w-full sm:w-auto justify-center items-center gap-2 px-4 py-2 text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
               whileTap={{ scale: 0.95 }}
             >
               <FaShareAlt />
@@ -162,7 +162,7 @@ function GifModal({ gif, onClose }: GifModalProps) {
 
             <motion.button
               onClick={downloadGif}
-              className="flex items-center gap-2 px-4 py-2 text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+              className="flex w-full sm:w-auto justify-center items-center gap-2 px-4 py-2 text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
               whileTap={{ scale: 0.95 }}
             >
               <FaDownload />
