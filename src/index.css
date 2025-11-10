@@ -4,3 +4,15 @@
 
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+.hide-scrollbar {
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE, Edge */
+  -ms-overflow-style: none;
+}
+
+/* Chrome, Safari, Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

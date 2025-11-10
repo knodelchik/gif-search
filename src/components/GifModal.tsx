@@ -109,7 +109,7 @@ function GifModal({ gif, onClose }: GifModalProps) {
       exit="exit"
     >
       <motion.div
-        className="relative w-full max-w-2xl p-6 bg-white rounded-lg shadow-xl dark:bg-gray-800 transform-gpu"
+        className="relative w-full max-w-2xl p-6 bg-white rounded-lg shadow-xl dark:bg-gray-800 transform-gpu sm:max-h-screen max-h-[85vh] overflow-y-auto hide-scrollbar"
         onClick={(e) => e.stopPropagation()}
         variants={modalVariants}
         initial="hidden"
